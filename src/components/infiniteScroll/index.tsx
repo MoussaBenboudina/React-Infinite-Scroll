@@ -14,7 +14,10 @@ const InfiniteScrollComponent = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await fetch("products.json");
+        const response = await fetch("/products.json");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
         const jsonData = await response.json();
         const newData = jsonData.products.slice(
           (page - 1) * itemsPerPage,
