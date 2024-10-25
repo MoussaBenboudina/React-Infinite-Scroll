@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Card from "../card.tsx";
+import Card from "../card/index.tsx";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { Data } from "../../type";
 import { motion } from "framer-motion";
