@@ -11,8 +11,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://MoussaBenboudina.github.io/React-Infinte-Scroll",
   "dependencies": {
-    "homepage": "https://MoussaBenboudina.github.io/React-Infinte-Scroll",
     "axios": "^1.7.7",
     "framer-motion": "^11.11.9",
     "react": "^18.3.1",
